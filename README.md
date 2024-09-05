@@ -7,19 +7,19 @@ Este repositorio contiene los proyectos y ejercicios realizados durante el curso
 El repositorio está organizado en las siguientes carpetas(pendiente de implementar):
 
 - **`Lecciones/`**: Contiene los proyectos generados al final de cada lección.
-  - Ejemplo: `Leccion1/`
-    - `Leccion1_Notebook.ipynb`
-    - `Leccion1_Datos.csv`
+  - Ejemplo: 
+    - `Proyecto1.ipynb`
+    - `Datos.csv`
 
 - **`Clases_Semanales/`**: Incluye los proyectos realizados durante las clases semanales.
-  - Ejemplo: `Clase1/`
-    - `Clase1_Notebook.ipynb`
-    - `Clase1_Datos.csv`
+  - Ejemplo: 
+    - `Clase1.ipynb`
+    - `Datos.csv`
 
 - **`Proyectos_Calificados/`**: Almacena las versiones calificadas de los proyectos finales de cada unidad o sprint.
-  - Ejemplo: `Proyecto_Sprint1/`
-    - `Sprint1_Notebook.ipynb`
-    - `Sprint1_Datos.csv`
+  - Ejemplo: 
+    - `proyecto1_Compl.ipynb`
+    - `SDatos.csv`
 
 ## Contenido
 
