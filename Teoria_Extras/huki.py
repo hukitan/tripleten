@@ -1,4 +1,5 @@
 def looks(datos):
+    """Genera un analisis de todo el set de datos de manera gloabal"""
     print("Se ejecuta la descripcion de los datos:")
     print(datos.describe(include= "all"))
     print()
@@ -13,4 +14,3 @@ def looks(datos):
     print()
     print("Duplicados:")
     print(datos.duplicated().sum())
-
