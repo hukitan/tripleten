@@ -81,5 +81,45 @@ ORDER BY
     trips_amount DESC;
 
 
--- actividad 4
 
+-- actividad 4
+SELECT 
+    name,
+    neighborhood_id
+FROM 
+    neighborhoods
+WHERE
+   name LIKE '%Hare' OR name LIKE 'Loop'
+
+
+--act 5
+select 
+    ts, 
+    CASE 
+    WHEN description LIKE '%rain%' THEN 'Bad' 
+    WHEN description LIKE '%storm%' THEN 'Bad' 
+    ELSE 'Good' 
+END AS weather_conditions
+FROM 
+    weather_records
+
+
+-- act 6
+SELECT
+    trips.start_ts,
+        CASE 
+    WHEN weather_records.description LIKE '%rain%' THEN 'Bad' 
+    WHEN weather_records.description LIKE '%storm%' THEN 'Bad' 
+    ELSE 'Good' 
+    END AS weather_conditions,
+    trips.duration_seconds
+FROM 
+    trips
+INNER JOIN 
+    weather_records ON  trips.start_ts = weather_records.ts
+Where
+    EXTRACT(DOW from trips.start_ts)= 6 AND
+    trips.pickup_location_id = 50 AND 
+    trips.dropoff_location_id = 63
+ORDER BY 
+trip_id;
