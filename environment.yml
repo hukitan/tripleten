@@ -10,4 +10,4 @@ dependencies:
   - scipy
   - ipykernel
   - sqlalchemy
-prefix: /home/hukitan/miniconda3/envs/TT
+
