@@ -10,4 +10,5 @@ dependencies:
   - scipy
   - ipykernel
   - sqlalchemy
-
+  - anaconda::scikit-learn
+prefix: /home/hukitan/miniconda3/envs/TT
